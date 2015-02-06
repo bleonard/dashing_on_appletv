@@ -1,4 +1,4 @@
-## Dashing on Apple TV
+# Dashing on Apple TV
 
 This is a sample project that shows how to hook up [Dashing](http://dashing.io/) to show as the as screen saver of an Apple TV.
 
@@ -6,7 +6,7 @@ This was a good idea for us to do because we already had conference rooms and co
 
 ![Sample TV](sampletv.jpg)
 
-### Mac
+## Mac
 
 Check out this project on a Mac and `bundle install`
 
@@ -20,7 +20,7 @@ Go back to the command line and run `bundle exec rake dashing:cron` - it should 
 
 You should see it succeed after a few times of that. When iPhoto closes itself, that means it worked.
 
-### Apple TV
+## Apple TV
 
 Just a few notes on the settings I used when configuring the Apple TV
 
@@ -47,12 +47,12 @@ _AirPlay_
 
 The "Classic" screensaver will show one image at a time. This works pretty well if you are taking a picture of the whole dashboard. I've also had success making a "dashboard" out of each widget and taking several screenshots and uploading all of them. In this case, I would use the "Shifting Tiles." This ends up looking like the original dashboard but it moves around a bit.
 
-### Repeat
+## Repeat
 
 Once this is all working you can go back to the project and run `bundle exec whenever -w` - this will set it up to update every 10 minutes or so.
 
 You'll want to make sure the computer does not go to sleep.
 
-### Troubleshooting
+## Troubleshooting
 
 One issue that I had was that if there was ever a time when there were no images in the iCloud album, then the Apple TV would default back to National Geographic photos. I'm not sure how this is possible other than some sort of lag in iCloud. Regardless, I ended up going with the "Shifting Tiles" solution noted above and always made sure to always have 1 image that never got removed in the album. I set up the iCloud gem so that if you make "hold" the image's name, it will leave it alone. So try that if you keep seeing beautiful whale pictures instead of your dashboard.
