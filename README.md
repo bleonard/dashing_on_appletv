@@ -4,6 +4,8 @@ This is a sample project that shows how to hook up [Dashing](http://dashing.io/)
 
 This was a good idea for us to do because we already had conference rooms and common areas with Apple TVs for use in AirPlay. This gives something helpful to look at automatically when not in use.
 
+![Sample TV](sampletv.jpg)
+
 ### Mac
 
 Check out this project on a Mac and `bundle install`
