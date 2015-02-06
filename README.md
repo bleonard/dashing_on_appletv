@@ -1,6 +1,8 @@
 ## Dashing on Apple TV
 
-This is a sample project that shows how to hook up [Dashing](TODO) to show as the as screen saver of an Apple TV.
+This is a sample project that shows how to hook up [Dashing](http://dashing.io/) to show as the as screen saver of an Apple TV.
+
+This was a good idea for us to do because we already had conference rooms and common areas with Apple TVs for use in AirPlay. This gives something helpful to look at automatically when not in use.
 
 ### Mac
 
@@ -22,20 +24,23 @@ Just a few notes on the settings I used when configuring the Apple TV
 
 *Restore to newest software*
 
-*General*
-Set up keyboard
-Set name
-Sleep after: never
-Software updates - Update automatically: on
+_General_
 
-*Screensaver*
-Start after: 2 minutes
-Photos - iCloud photos - Login - Pick "dashboard" album
-Classic  - Fade through black - 20 seconds
+* Set up keyboard
+* Set name
+* Sleep after: never
+* Software updates - Update automatically: on
 
-*AirPlay*
-Conference room display - off
-Play iTunes from the cloud - off
+_Screensaver_
+
+* Start after: 2 minutes
+* Photos - iCloud photos - Login - Pick "dashboard" album
+* Classic  - Fade through black - 20 seconds
+
+_AirPlay_
+
+* Conference room display - off
+* Play iTunes from the cloud - off
 
 
 The "Classic" screensaver will show one image at a time. This works pretty well if you are taking a picture of the whole dashboard. I've also had success making a "dashboard" out of each widget and taking several screenshots and uploading all of them. In this case, I would use the "Shifting Tiles." This ends up looking like the original dashboard but it moves around a bit.
@@ -46,3 +51,6 @@ Once this is all working you can go back to the project and run `bundle exec whe
 
 You'll want to make sure the computer does not go to sleep.
 
+### Troubleshooting
+
+One issue that I had was that if there was ever a time when there were no images in the iCloud album, then the Apple TV would default back to National Geographic photos. I'm not sure how this is possible other than some sort of lag in iCloud. Regardless, I ended up going with the "Shifting Tiles" solution noted above and always made sure to always have 1 image that never got removed in the album. I set up the iCloud gem so that if you make "hold" the image's name, it will leave it alone. So try that if you keep seeing beautiful whale pictures instead of your dashboard.
