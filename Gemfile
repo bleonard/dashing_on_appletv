@@ -7,3 +7,4 @@ gem 'twitter', '>= 5.9.0'
 
 gem 'rake'
 gem 'dashing-screenshots'
+gem 'icloud-photo'
